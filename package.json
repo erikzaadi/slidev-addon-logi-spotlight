@@ -10,6 +10,14 @@
   ],
   "license": "MIT",
   "author": "Erik Zaadi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikzaadi/slidev-addon-logi-spotlight.git"
+  },
+  "homepage": "https://github.com/erikzaadi/slidev-addon-logi-spotlight#readme",
+  "bugs": {
+    "url": "https://github.com/erikzaadi/slidev-addon-logi-spotlight/issues"
+  },
   "type": "module",
   "files": [
     "setup",
@@ -19,7 +27,8 @@
     "dev": "slidev example.md",
     "test": "vitest run",
     "lint": "eslint . && prettier --check .",
-    "format": "eslint --fix . && prettier --write ."
+    "format": "eslint --fix . && prettier --write .",
+    "prepublishOnly": "npm run lint && npm test"
   },
   "peerDependencies": {
     "@slidev/client": "*",
