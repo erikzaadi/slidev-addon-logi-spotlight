@@ -1,0 +1,43 @@
+{
+  "name": "slidev-addon-logi-spotlight",
+  "version": "0.1.0",
+  "description": "Start Logitech Spotlight 2 timer vibrations from Slidev, like in Google Slides",
+  "keywords": [
+    "slidev-addon",
+    "slidev",
+    "logitech",
+    "spotlight"
+  ],
+  "license": "MIT",
+  "author": "Erik Zaadi",
+  "type": "module",
+  "files": [
+    "setup",
+    "spotlight.ts"
+  ],
+  "scripts": {
+    "dev": "slidev example.md",
+    "test": "vitest run",
+    "lint": "eslint . && prettier --check .",
+    "format": "eslint --fix . && prettier --write ."
+  },
+  "peerDependencies": {
+    "@slidev/client": "*",
+    "@slidev/types": "*"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/client": "^53.0.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/types": "^53.0.0",
+    "eslint": "^10.14.0",
+    "markdown-it": "^14.3.3",
+    "prettier": "^3.9.10",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
